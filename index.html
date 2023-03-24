@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__logo">
+        <p>Currency Converter</p>
+        <h1>Swap Money <img src="/img/arrows.svg" alt="" /></h1>
+      </div>
+      <div class="app__form">
+        <div class="app__input">
+          <div class="app__currency">
+            <h6>Currency:</h6>
+            <div class="app__container">
+              <div class="app__wind" id="windOne">
+                <p
+                  style="background-image: url(/img/iconFlag/ukr.png)"
+                  class="option current"
+                >
+                  UAN
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="app__amount">
+            <h6>Amount</h6>
+            <input class="app__enter" type="number" placeholder="Enter" />
+          </div>
+        </div>
+        <div class="app__exchange">
+          <img src="/img/exchange.svg" alt="arrows" id="arrow" />
+        </div>
+        <div class="app__input">
+          <div class="app__currency">
+            <h6>Currency:</h6>
+            <div class="app__wind" id="windTwo">
+              <p
+                style="background-image: url(/img/iconFlag/usa.png)"
+                class="option current"
+              >
+                USD
+              </p>
+            </div>
+          </div>
+          <div class="app__amount">
+            <h6>Amount</h6>
+            <input class="app__enter" type="number" />
+          </div>
+        </div>
+      </div>
+      <p class="app__attention">
+        Курс вказаний за даними НБУ, та може відрізнятись від фактичного. Курс
+        актуальний на
+        <a href="https://bank.gov.ua/ua/markets/exchangerates" target="_blank"
+          >loading...</a
+        >
+      </p>
+    </div>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
